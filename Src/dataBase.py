@@ -4,7 +4,7 @@ from sqlite3 import Error
 class dataBase:
     def __init__(self):
         try:
-            self.conexion = sqlite3.connect("Persistencia/database.db")
+            self.conexion = sqlite3.connect("database.db")
             self.objCursor = self.conexion.cursor()
             print("Conexion establecida")
         except Error:

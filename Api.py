@@ -32,7 +32,7 @@ class Api:
         self.Conexion.create_table()
         self.Conexion.insert_table(countrys)
 
-        dataFrame.to_json("Json/data.json")
+        dataFrame.to_json("data.json")
 
         self.Ventana.show_Table(countrys, TTotal, TPromedio, TMinimo, TMaximo)
 
